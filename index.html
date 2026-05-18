@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>umasuegiru Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">UMASUEGIRU</a>
+
+    <nav class="nav">
+        <a href="about.html">ABOUT</a>
+
+        <div class="nav-item">
+            <a href="index.html#project">PROJECT</a>
+            <div class="project-dropdown">
+                <a href="index.html#avatar">3D V</a>
+                <a href="index.html#figure">FIGURE</a>
+                <a href="index.html#etc">ETC(..)</a>
+            </div>
+        </div>
+
+        <a href="#footer-contact">CONTACT</a>
+    </nav>
+</header>
+
+<main>
+    <section class="project-hero" id="project">
+        <h1>Solo Portfolio Project</h1>
+        <p>All works were personally created by me · Modeling · Texturing · Rigging · Facial Setup · Unity Shader</p>
+        <div class="hero-line"></div>
+
+        <div class="category-menu">
+            <a href="#avatar">3D V</a>
+            <a href="#figure">FIGURE</a>
+            <a href="#etc">ETC(..)</a>
+        </div>
+    </section>
+
+    <section class="portfolio-section" id="avatar">
+        <h2>3D V</h2>
+
+        <div class="carousel project-carousel" data-carousel>
+            <div class="carousel-window">
+                <button class="carousel-arrow carousel-arrow-left" type="button" data-prev aria-label="Previous">‹</button>
+
+                <div class="carousel-track">
+                    <div class="work-card" data-slide onclick="openLightbox('images/work01-full.jpg', '캐릭터 이름 01', '3D MODELING')">
+                        <img src="images/work01-thumb.jpg" alt="캐릭터 이름 01">
+                        <div class="work-info">
+                            <h3>캐릭터 이름 01</h3>
+                            <p>3D MODELING</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card" data-slide onclick="openLightbox('images/work02-full.jpg', '캐릭터 이름 02', 'V AVATAR')">
+                        <img src="images/work02-thumb.jpg" alt="캐릭터 이름 02">
+                        <div class="work-info">
+                            <h3>캐릭터 이름 02</h3>
+                            <p>V AVATAR</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card" data-slide onclick="openLightbox('images/work03-full.jpg', '캐릭터 이름 03', 'TEXTURING')">
+                        <img src="images/work03-thumb.jpg" alt="캐릭터 이름 03">
+                        <div class="work-info">
+                            <h3>캐릭터 이름 03</h3>
+                            <p>TEXTURING</p>
+                        </div>
+                    </div>
+
+                    <a class="work-card" data-slide href="https://www.youtube.com/" target="_blank">
+                        <img src="images/work04-thumb.jpg" alt="유튜브 영상 작업물">
+                        <div class="work-info">
+                            <h3>캐릭터 이름 04</h3>
+                            <p>YOUTUBE VIDEO</p>
+                        </div>
+                    </a>
+
+                    <div class="work-card" data-slide onclick="openLightbox('images/work05-full.jpg', '캐릭터 이름 05', 'RIGGING')">
+                        <img src="images/work05-thumb.jpg" alt="캐릭터 이름 05">
+                        <div class="work-info">
+                            <h3>캐릭터 이름 05</h3>
+                            <p>RIGGING</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card" data-slide onclick="openLightbox('images/work06-full.jpg', '캐릭터 이름 06', 'FACIAL SETUP')">
+                        <img src="images/work06-thumb.jpg" alt="캐릭터 이름 06">
+                        <div class="work-info">
+                            <h3>캐릭터 이름 06</h3>
+                            <p>FACIAL SETUP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-arrow carousel-arrow-right" type="button" data-next aria-label="Next">›</button>
+            </div>
+
+            <div class="carousel-dots" data-dots></div>
+        </div>
+    </section>
+
+    <section class="portfolio-section" id="figure">
+        <h2>Figure</h2>
+
+        <div class="carousel project-carousel" data-carousel>
+            <div class="carousel-window">
+                <button class="carousel-arrow carousel-arrow-left" type="button" data-prev aria-label="Previous">‹</button>
+
+                <div class="carousel-track">
+                    <div class="work-card" data-slide onclick="openLightbox('images/figure01-full.jpg', '피규어 이름 01', 'FIGURE')">
+                        <img src="images/figure01-thumb.jpg" alt="피규어 이름 01">
+                        <div class="work-info">
+                            <h3>피규어 이름 01</h3>
+                            <p>FIGURE</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card" data-slide onclick="openLightbox('images/figure02-full.jpg', '피규어 이름 02', 'CHARACTER FIGURE')">
+                        <img src="images/figure02-thumb.jpg" alt="피규어 이름 02">
+                        <div class="work-info">
+                            <h3>피규어 이름 02</h3>
+                            <p>CHARACTER FIGURE</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card" data-slide onclick="openLightbox('images/figure03-full.jpg', '피규어 이름 03', 'REFERENCE STUDY')">
+                        <img src="images/figure03-thumb.jpg" alt="피규어 이름 03">
+                        <div class="work-info">
+                            <h3>피규어 이름 03</h3>
+                            <p>REFERENCE STUDY</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card" data-slide onclick="openLightbox('images/figure04-full.jpg', '피규어 이름 04', 'POSE STUDY')">
+                        <img src="images/figure04-thumb.jpg" alt="피규어 이름 04">
+                        <div class="work-info">
+                            <h3>피규어 이름 04</h3>
+                            <p>POSE STUDY</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card" data-slide onclick="openLightbox('images/figure05-full.jpg', '피규어 이름 05', 'FIGURE')">
+                        <img src="images/figure05-thumb.jpg" alt="피규어 이름 05">
+                        <div class="work-info">
+                            <h3>피규어 이름 05</h3>
+                            <p>FIGURE</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-arrow carousel-arrow-right" type="button" data-next aria-label="Next">›</button>
+            </div>
+
+            <div class="carousel-dots" data-dots></div>
+        </div>
+    </section>
+
+    <section class="portfolio-section" id="etc">
+        <h2>ETC</h2>
+
+        <div class="carousel project-carousel" data-carousel>
+            <div class="carousel-window">
+                <button class="carousel-arrow carousel-arrow-left" type="button" data-prev aria-label="Previous">‹</button>
+
+                <div class="carousel-track">
+                    <a class="work-card" data-slide href="https://www.youtube.com/" target="_blank">
+                        <img src="images/etc01-thumb.jpg" alt="유튜브 영상 작업물">
+                        <div class="work-info">
+                            <h3>Unity Shader Preview</h3>
+                            <p>YOUTUBE VIDEO</p>
+                        </div>
+                    </a>
+
+                    <div class="work-card" data-slide onclick="openLightbox('images/etc02-full.jpg', 'Unity Project 01', 'UNITY SHADER')">
+                        <img src="images/etc02-thumb.jpg" alt="Unity Project 01">
+                        <div class="work-info">
+                            <h3>Unity Project 01</h3>
+                            <p>UNITY SHADER</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card" data-slide onclick="openLightbox('images/etc03-full.jpg', 'Rigging Test', 'RIGGING')">
+                        <img src="images/etc03-thumb.jpg" alt="Rigging Test">
+                        <div class="work-info">
+                            <h3>Rigging Test</h3>
+                            <p>RIGGING</p>
+                        </div>
+                    </div>
+
+                    <a class="work-card" data-slide href="https://github.com/umasuegiru" target="_blank">
+                        <img src="images/etc04-thumb.jpg" alt="GitHub Project">
+                        <div class="work-info">
+                            <h3>GitHub Project</h3>
+                            <p>GITHUB LINK</p>
+                        </div>
+                    </a>
+                </div>
+
+                <button class="carousel-arrow carousel-arrow-right" type="button" data-next aria-label="Next">›</button>
+            </div>
+
+            <div class="carousel-dots" data-dots></div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer" id="footer-contact">
+    <div class="footer-inner">
+        <div class="footer-left">
+            <h2>UMASUEGIRU</h2>
+            <p>Character Modeling · Texturing · Rigging · Facial Setup · Unity Shader</p>
+            <p>Blender / Substance 3D Painter / Unity</p>
+        </div>
+
+        <div class="footer-right">
+            <h3>Contact</h3>
+
+            <div class="footer-links">
+                <a href="files/portfolio.pdf" target="_blank">PDF Portfolio</a>
+                <a href="mailto:your-email@example.com">Email</a>
+                <a href="https://sketchfab.com/" target="_blank">Sketchfab</a>
+                <a href="https://www.artstation.com/" target="_blank">ArtStation</a>
+                <a href="https://github.com/umasuegiru" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 umasuegiru Portfolio</p>
+        <button class="copyright-link" type="button" onclick="openPolicyModal()">COPYRIGHT</button>
+    </div>
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+        <img id="lightbox-img" src="" alt="확대 이미지">
+        <div class="lightbox-caption">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-type"></p>
+        </div>
+    </div>
+</div>
+
+<div id="policy-modal" class="policy-modal" onclick="closePolicyModal()">
+    <div class="policy-modal-box" onclick="event.stopPropagation()">
+        <button class="policy-close" type="button" aria-label="Close" onclick="closePolicyModal()">×</button>
+        <h2>저작권 안내</h2>
+
+        <div class="policy-content">
+            <p>
+                본 사이트에 게시된 포트폴리오 구성, 설명 문구, 이미지, 렌더링 결과물, 모델링 작업물,
+                텍스처 작업물, 리깅 및 페이셜 세팅 관련 자료는 저작권의 보호를 받습니다.
+            </p>
+
+            <p>
+                별도의 명시가 없는 한, 본 사이트의 포트폴리오 구성과 직접 제작한 작업물의 저작권은
+                UMASUEGIRU에게 있습니다. 사전 허가 없이 해당 자료를 복제, 배포, 수정, 재게시하거나
+                상업적으로 사용하는 것을 금지합니다.
+            </p>
+
+            <p>
+                일부 작업물은 학습, 연습, 협업, 의뢰 또는 포트폴리오 설명을 목적으로 제작되었을 수 있습니다.
+                이 경우 캐릭터명, 브랜드명, 원작 및 관련 지식재산권은 각 권리자에게 있습니다.
+            </p>
+
+            <p>
+                본 사이트의 자료는 포트폴리오와 작업 과정 소개를 위한 목적으로만 제공됩니다.
+                이미지나 텍스트를 무단으로 저장, 재업로드, 판매, 2차 배포하거나 자동화 시스템의 학습 데이터로
+                사용하는 행위는 허용되지 않습니다.
+            </p>
+
+            <p>
+                게시된 자료와 관련하여 수정 또는 삭제 요청이 필요한 경우 사이트 소유자에게 직접 연락해 주세요.
+                정당한 요청은 확인 후 가능한 범위에서 신속히 처리하겠습니다.
+            </p>
+
+            <p>
+                본 사이트를 열람하는 것은 위 저작권 안내와 이용 조건을 존중하는 것에 동의하는 것으로 간주됩니다.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - umasuegiru Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">UMASUEGIRU</a>
+
+    <nav class="nav">
+        <a href="about.html">ABOUT</a>
+
+        <div class="nav-item">
+            <a href="index.html#project">PROJECT</a>
+            <div class="project-dropdown">
+                <a href="index.html#avatar">3D V</a>
+                <a href="index.html#figure">FIGURE</a>
+                <a href="index.html#etc">ETC(..)</a>
+            </div>
+        </div>
+
+        <a href="#footer-contact">CONTACT</a>
+    </nav>
+</header>
+
+<main class="about-page">
+    <section class="about-hero">
+        <div class="about-symbol">
+            <span>UG</span>
+        </div>
+
+        <h1>UMASUEGIRU</h1>
+        <p>CHARACTER ARTIST</p>
+    </section>
+
+    <section class="about-service">
+        <div class="service-inner">
+            <div class="service-text">
+                <h2>Service</h2>
+                <p>Modeling · Texturing · Rigging · Facial Setup · Unity Shader</p>
+            </div>
+
+            <div class="carousel service-carousel" data-carousel>
+                <div class="carousel-window">
+                    <button class="carousel-arrow carousel-arrow-left" type="button" data-prev aria-label="Previous">‹</button>
+
+                    <div class="carousel-track">
+                        <div class="service-card" data-slide onclick="openLightbox('images/service-avatar-full.jpg', '3D Avatar', 'Character Modeling / Texturing / Rigging')">
+                            <img src="images/service-avatar-thumb.jpg" alt="3D Avatar">
+                            <div class="service-card-info">
+                                <h3>3D Avatar</h3>
+                                <p>Character Modeling / Texturing / Rigging</p>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-slide onclick="openLightbox('images/service-figure-full.jpg', 'Figure', 'Figure Reference / Character Presentation')">
+                            <img src="images/service-figure-thumb.jpg" alt="Figure">
+                            <div class="service-card-info">
+                                <h3>Figure</h3>
+                                <p>Figure Reference / Character Presentation</p>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-slide onclick="openLightbox('images/service-etc-full.jpg', 'ETC', 'Unity Shader / Facial Setup / Technical Test')">
+                            <img src="images/service-etc-thumb.jpg" alt="ETC">
+                            <div class="service-card-info">
+                                <h3>ETC</h3>
+                                <p>Unity Shader / Facial Setup / Technical Test</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-arrow carousel-arrow-right" type="button" data-next aria-label="Next">›</button>
+                </div>
+
+                <div class="carousel-dots" data-dots></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer" id="footer-contact">
+    <div class="footer-inner">
+        <div class="footer-left">
+            <h2>UMASUEGIRU</h2>
+            <p>Character Modeling · Texturing · Rigging · Facial Setup · Unity Shader</p>
+            <p>Blender / Substance 3D Painter / Unity</p>
+        </div>
+
+        <div class="footer-right">
+            <h3>Contact</h3>
+
+            <div class="footer-links">
+                <a href="files/portfolio.pdf" target="_blank">PDF Portfolio</a>
+                <a href="mailto:your-email@example.com">Email</a>
+                <a href="https://sketchfab.com/" target="_blank">Sketchfab</a>
+                <a href="https://www.artstation.com/" target="_blank">ArtStation</a>
+                <a href="https://github.com/umasuegiru" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 umasuegiru Portfolio</p>
+        <button class="copyright-link" type="button" onclick="openPolicyModal()">COPYRIGHT</button>
+    </div>
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+        <img id="lightbox-img" src="" alt="확대 이미지">
+        <div class="lightbox-caption">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-type"></p>
+        </div>
+    </div>
+</div>
+
+<div id="policy-modal" class="policy-modal" onclick="closePolicyModal()">
+    <div class="policy-modal-box" onclick="event.stopPropagation()">
+        <button class="policy-close" type="button" aria-label="Close" onclick="closePolicyModal()">×</button>
+        <h2>저작권 안내</h2>
+
+        <div class="policy-content">
+            <p>
+                본 사이트에 게시된 포트폴리오 구성, 설명 문구, 이미지, 렌더링 결과물, 모델링 작업물,
+                텍스처 작업물, 리깅 및 페이셜 세팅 관련 자료는 저작권의 보호를 받습니다.
+            </p>
+
+            <p>
+                별도의 명시가 없는 한, 본 사이트의 포트폴리오 구성과 직접 제작한 작업물의 저작권은
+                UMASUEGIRU에게 있습니다. 사전 허가 없이 해당 자료를 복제, 배포, 수정, 재게시하거나
+                상업적으로 사용하는 것을 금지합니다.
+            </p>
+
+            <p>
+                일부 작업물은 학습, 연습, 협업, 의뢰 또는 포트폴리오 설명을 목적으로 제작되었을 수 있습니다.
+                이 경우 캐릭터명, 브랜드명, 원작 및 관련 지식재산권은 각 권리자에게 있습니다.
+            </p>
+
+            <p>
+                본 사이트의 자료는 포트폴리오와 작업 과정 소개를 위한 목적으로만 제공됩니다.
+                이미지나 텍스트를 무단으로 저장, 재업로드, 판매, 2차 배포하거나 자동화 시스템의 학습 데이터로
+                사용하는 행위는 허용되지 않습니다.
+            </p>
+
+            <p>
+                게시된 자료와 관련하여 수정 또는 삭제 요청이 필요한 경우 사이트 소유자에게 직접 연락해 주세요.
+                정당한 요청은 확인 후 가능한 범위에서 신속히 처리하겠습니다.
+            </p>
+
+            <p>
+                본 사이트를 열람하는 것은 위 저작권 안내와 이용 조건을 존중하는 것에 동의하는 것으로 간주됩니다.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
